@@ -4,7 +4,7 @@ import React from "react";
     Challenge 1 : move our ternary directly inside of our JSX
     so that "Yes" and "No" are determined inside the <h1>
 
-*/ 
+*/
 
 export default function Main(){
     const isGoingOut = true
