@@ -1,9 +1,10 @@
 import React from "react";
+import Counter from "./connundrumResolved/Counter";
 // import Header from "./components/Header";
 // import Meme from "./components/Meme";
 //import Events from "./event-listener/Events";
 //import Items from "./connundrum/Items";
-import State from "./connundrumResolved/State";
+//import State from "./connundrumResolved/State";
 
 export default function App(){
     return(
@@ -12,7 +13,8 @@ export default function App(){
             <Meme/> */}
             {/* <Events/> */}
             {/* <Items/> */}
-            <State/>
+            {/* <State/> */}
+            <Counter/>
         </div>
     )
 }
