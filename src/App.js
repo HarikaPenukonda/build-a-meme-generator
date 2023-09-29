@@ -1,5 +1,6 @@
 import React from "react";
-import Main from "./ternary-practice/Main";
+import First from "./ternary-practice/First"
+//import Main from "./ternary-practice/Main";
 //import Counter from "./connundrumResolved/Counter";
 // import Header from "./components/Header";
 // import Meme from "./components/Meme";
@@ -16,7 +17,9 @@ export default function App(){
             {/* <Items/> */}
             {/* <State/> */}
             {/* <Counter/> */}
-            <Main/>
+            {/* <Main/> */}
+            <First/>
+
 
         </div>
     )
