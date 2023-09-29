@@ -1,7 +1,7 @@
 import React from "react";
-import Counter from "./connundrumResolved/Counter";
-// import Header from "./components/Header";
-// import Meme from "./components/Meme";
+//import Counter from "./connundrumResolved/Counter";
+import Header from "./components/Header";
+import Meme from "./components/Meme";
 //import Events from "./event-listener/Events";
 //import Items from "./connundrum/Items";
 //import State from "./connundrumResolved/State";
@@ -9,12 +9,12 @@ import Counter from "./connundrumResolved/Counter";
 export default function App(){
     return(
         <div>
-            {/* <Header/>
-            <Meme/> */}
+            <Header/>
+            <Meme/>
             {/* <Events/> */}
             {/* <Items/> */}
             {/* <State/> */}
-            <Counter/>
+            {/* <Counter/> */}
         </div>
     )
 }
