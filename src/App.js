@@ -1,5 +1,5 @@
 import React from "react";
-import First from "./ternary-practice/First"
+//import First from "./ternary-practice/First"
 //import Main from "./ternary-practice/Main";
 //import Counter from "./connundrumResolved/Counter";
 // import Header from "./components/Header";
@@ -7,7 +7,8 @@ import First from "./ternary-practice/First"
 //import Events from "./event-listener/Events";
 //import Items from "./connundrum/Items";
 //import State from "./connundrumResolved/State";
-
+//import Things from "./connundrumResolved/Things"
+import ThingsPractice from "./connundrumResolved/ThingsPractice";
 export default function App(){
     return(
         <div>
@@ -18,8 +19,9 @@ export default function App(){
             {/* <State/> */}
             {/* <Counter/> */}
             {/* <Main/> */}
-            <First/>
-
+            {/* <First/> */}
+            {/* <Things/> */}
+            <ThingsPractice/>
 
         </div>
     )
