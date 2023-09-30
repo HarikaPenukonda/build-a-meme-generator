@@ -13,17 +13,33 @@ import memedata from "../memesData.js"
         - When the getMemeImage function is called, update the memeImage state to be the random choose image URL
         - Below the div.form, add an <img/> and set the src to the new `memeImage` state we created.
 */
+/*
+    Challenge 3 : Update our state to save the meme-related data as an object `meme`. It should have the following
+    three properties topText, bottomText, randomImage
+*/ 
 
 let url
 
 export default function Meme(){
-    const [memeImage,setMemeImage] = useState("")
+    // const [memeImage,setMemeImage] = useState("https://i.imgflip.com/1bij.jpg")
+    const [meme,setMeme] = useState({
+        topText : "",
+        bottomText : "",
+        randomImage : "https://i.imgflip.com/1bij.jpg"
+    })
     
+    const [allMemeImages,setAllMemeImages] = useState(memedata)
+
     function getRandomImage(){
         const memeArray = memedata.data.memes
         const randomNumber = Math.floor(Math.random() * memeArray.length)
         url = memeArray[randomNumber].url
-        setMemeImage(url)
+        setMeme(prevMeme => {
+            return{
+                ...prevMeme,
+                randomImage : url
+            }
+        })
         //console.log(url)
 
     }
@@ -42,7 +58,7 @@ export default function Meme(){
                 />
                 <button onClick={getRandomImage} className="form--button ">Get a new meme image</button>
                 <img 
-                    src={memeImage}
+                    src={meme.randomImage}
                     alt=""
                     className="meme--image"
                     />
