@@ -3,6 +3,13 @@ import React, { useState } from "react";
 /*
     Challenge 1 : Fill in the values in the markup using the properties of our state object
 */ 
+/*
+    Challenge 2 : Use a ternary to determine which star image filename
+    should be used based on `contact.isFavourite` property
+
+    `true` => "star-filled.png"
+    `false` => "star-empty.png"
+*/ 
 
 export default function Contact(){
     const [contact,setContact] = useState({
@@ -10,8 +17,10 @@ export default function Contact(){
             lastName : "Doe",
             phone : "+1 (321) 456-7899",
             email : "janedoe@gmail.com",
-            isFavourite : false
+            isFavourite : true
     })
+
+    let starIcon = contact.isFavourite ? 'star-fill.png' : 'star-empty.png'
 
     function toggleFavourite(){
         console.log("Toggle Favourite")
@@ -22,10 +31,11 @@ export default function Contact(){
             <article className="card">
             <img src="./images/user.avif" alt="" className="card--image"/>
             <div className="card--info">
-                <img src={`../images/star-empty.png`}
+                <img src={`../images/${starIcon}`}
                 className="card--favourite"
                 onClick={toggleFavourite}
                 width="30px"
+                alt=""
                 />
             <h2 className="card--name">
                 {contact.firstName} {contact.lastName}
