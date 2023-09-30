@@ -10,8 +10,8 @@ import React from "react";
 //import State from "./connundrumResolved/State";
 //import Things from "./connundrumResolved/Things"
 //import ThingsPractice from "./connundrumResolved/ThingsPractice";
-//import Contact from "./contactCard/Contact";
-import Counter2 from "./connundrumResolved/Counter2";
+import Contact from "./contactCard/Contact";
+//import Counter2 from "./connundrumResolved/Counter2";
 export default function App(){
     return(
         <div>
@@ -25,8 +25,8 @@ export default function App(){
             {/* <First/> */}
             {/* <Things/> */}
             {/* <ThingsPractice/> */}
-            {/* <Contact/> */}
-            <Counter2/>
+            <Contact/>
+            {/* <Counter2/> */}
 
         </div>
     )

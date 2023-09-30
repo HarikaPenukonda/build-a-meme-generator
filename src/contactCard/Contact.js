@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Star from "./Star";
 
 /*
     Challenge 1 : Fill in the values in the markup using the properties of our state object
@@ -20,8 +21,6 @@ export default function Contact(){
             isFavourite : true
     })
 
-    let starIcon = contact.isFavourite ? 'star-fill.png' : 'star-empty.png'
-
     function toggleFavourite(){
         setContact(prevState => (
             {
@@ -30,14 +29,6 @@ export default function Contact(){
             }
            
         ))
-        // setContact(prevState => {
-        //     // return a object
-        //     return{
-        //         ...prevState,
-        //         isFavourite : !prevState.isFavourite
-        //     }
-           
-        // })
     }
 
     return(
@@ -45,12 +36,10 @@ export default function Contact(){
             <article className="card">
             <img src="./images/user.avif" alt="" className="card--image"/>
             <div className="card--info">
-                <img src={`../images/${starIcon}`}
-                className="card--favourite"
-                onClick={toggleFavourite}
-                width="30px"
-                alt=""
-                />
+            <Star
+                isFilled={contact.isFavourite}
+                handleClick={toggleFavourite}
+            />
             <h2 className="card--name">
                 {contact.firstName} {contact.lastName}
             </h2>
