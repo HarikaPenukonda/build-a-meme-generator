@@ -23,7 +23,13 @@ export default function Contact(){
     let starIcon = contact.isFavourite ? 'star-fill.png' : 'star-empty.png'
 
     function toggleFavourite(){
-        console.log("Toggle Favourite")
+        setContact(prevState => {
+            return{
+                ...prevState,
+                isFavourite : !prevState.isFavourite
+            }
+           
+        })
     }
 
     return(
