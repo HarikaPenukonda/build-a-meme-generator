@@ -1,4 +1,6 @@
 import React from "react";
+import { useState } from "react";
+
 // import Header from "./components/Header";
 // import Meme from "./components/Meme";
 
@@ -10,9 +12,12 @@ import React from "react";
 //import State from "./connundrumResolved/State";
 //import Things from "./connundrumResolved/Things"
 //import ThingsPractice from "./connundrumResolved/ThingsPractice";
-import Contact from "./contactCard/Contact";
+//import Contact from "./contactCard/Contact";
 //import Counter2 from "./connundrumResolved/Counter2";
+import Header from "./passing-data-around/Header";
+import Body from "./passing-data-around/Body";
 export default function App(){
+    const[user,setUser] = useState("Joe")
     return(
         <div>
             {/* <Header/>
@@ -25,9 +30,10 @@ export default function App(){
             {/* <First/> */}
             {/* <Things/> */}
             {/* <ThingsPractice/> */}
-            <Contact/>
+            {/* <Contact/> */}
             {/* <Counter2/> */}
-
+            <Header user={user}/>
+            <Body user={user}/>
         </div>
     )
 }
