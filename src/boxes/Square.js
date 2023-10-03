@@ -10,6 +10,7 @@ export default function Square(){
         <Box
             key={data.id}
             on={data.on}
+
         />
     ))
 
