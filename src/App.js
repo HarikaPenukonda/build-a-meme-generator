@@ -1,4 +1,5 @@
 import React from "react";
+//import Joke from "./conditional-rendering/Joke";
 //import { useState } from "react";
 
 // import Header from "./components/Header";
@@ -16,12 +17,13 @@ import React from "react";
 //import Counter2 from "./connundrumResolved/Counter2";
 // import Header from "./passing-data-around/Header";
 // import Body from "./passing-data-around/Body";
-import Square from "./boxes/Square";
+//import Square from "./boxes/Square";
+import AppJoke from "./conditional-rendering/AppJoke"
 
 
 
 export default function App(){
-    // const[user,setUser] = useState("Joe")
+    // const[user,setUser] = useState("Joe") 
     return(
         <div>
             {/* <Header/>
@@ -38,7 +40,8 @@ export default function App(){
             {/* <Counter2/> */}
             {/* <Header user={user}/>
             <Body user={user}/> */}
-            <Square/>
+            {/* <Square/> */}
+            <AppJoke/>
             
         </div>
     )
