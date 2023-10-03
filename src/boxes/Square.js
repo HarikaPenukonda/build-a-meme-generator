@@ -8,20 +8,9 @@ export default function Square(){
 
     function toggle(id){
         setSquares(prevState => {
-            const newSquares = []
-            for(let i = 0; i<prevState.length;i++){
-                const currentSquare = prevState[i]
-                if(currentSquare.id === id){
-                    const updatedSquare = {
-                        ...currentSquare,
-                        on : !currentSquare.on
-                    }
-                    newSquares.push(updatedSquare)
-                }else{
-                    newSquares.push(currentSquare)
-                }
-            }
-            return newSquares
+            return prevState.map((data)=>{
+                return data.id === id ? {...data, on : !data.on} : data
+            })
         })
     }
 
@@ -30,7 +19,7 @@ export default function Square(){
             key={data.id}
             id={data.id}
             on={data.on}
-            handleClick={toggle}
+            handleClick={()=>toggle(data.id)}
         />
     ))
 
