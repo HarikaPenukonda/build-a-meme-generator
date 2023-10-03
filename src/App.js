@@ -3,7 +3,7 @@ import React from "react";
 
 // import Header from "./components/Header";
 // import Meme from "./components/Meme";
-import AppOne from "./conditional-rendering-practice/AppOne"
+import AppJoke from "./conditional-rendering/AppJoke"
 
 
 
@@ -17,7 +17,8 @@ export default function App(){
             
             {/* <Header user={user}/>
             <Body user={user}/> */}
-            <AppOne/>
+            {/* <AppOne/> */}
+            <AppJoke/>
             
         </div>
     )

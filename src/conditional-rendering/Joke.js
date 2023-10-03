@@ -13,10 +13,15 @@ export default function Joke(props){
         <div>
             {props.setup && <h3>{props.setup}</h3>}
             {/* <p>{props.punchline}</p> */}
+            {/* conditional rendering  */}
             {isShown && <p>{props.punchline}</p>}
-            <button 
+            
+            {isShown && <button 
                 onClick={toggle}
-            >Click ME!</button>
+            >Hide punchline!</button>}
+             {!isShown && <button 
+                onClick={toggle}
+            >Show punchline!</button>}
             <hr/>
         </div>
     )
