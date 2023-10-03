@@ -16,7 +16,8 @@ import React from "react";
 //import Counter2 from "./connundrumResolved/Counter2";
 // import Header from "./passing-data-around/Header";
 // import Body from "./passing-data-around/Body";
-import Boxes from "./boxes/Boxes"
+import Square from "./boxes/Square";
+
 
 
 export default function App(){
@@ -37,7 +38,8 @@ export default function App(){
             {/* <Counter2/> */}
             {/* <Header user={user}/>
             <Body user={user}/> */}
-            <Boxes darkMode={false}/>
+            <Square/>
+            
         </div>
     )
 }
