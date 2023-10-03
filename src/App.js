@@ -3,10 +3,7 @@ import React from "react";
 
 // import Header from "./components/Header";
 // import Meme from "./components/Meme";
-import AppJoke from "./conditional-rendering/AppJoke"
-
-
-
+import AppTwo from "./conditional-rendering-practice/AppTwo"
 
 export default function App(){
     // const[user,setUser] = useState("Joe") 
@@ -17,8 +14,8 @@ export default function App(){
             
             {/* <Header user={user}/>
             <Body user={user}/> */}
-            {/* <AppOne/> */}
-            <AppJoke/>
+        
+           <AppTwo/>
             
         </div>
     )
