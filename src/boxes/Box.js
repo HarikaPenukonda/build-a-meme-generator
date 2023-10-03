@@ -1,22 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 //import boxesData from "./boxes-data";
 
 export default function Box(props){
-    const [mode,setMode] = useState(props.on)
-    
-    function handleClick(){
-        setMode(prevState => !prevState)
-    }
-
+    //console.log(props.id)
     const styles = {
-        backgroundColor : mode ? "#222222" : "transparent" 
+        backgroundColor : props.on ? "#222222" : "transparent" 
     }
    
     return(
         <div 
             className="box"
             style={styles}
-            onClick={handleClick}>
+            onClick={()=>props.handleClick(props.id)}
+            >
         </div>
     )
 }
