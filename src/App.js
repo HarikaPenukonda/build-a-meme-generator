@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+//import { useState } from "react";
 
 // import Header from "./components/Header";
 // import Meme from "./components/Meme";
@@ -14,10 +14,13 @@ import { useState } from "react";
 //import ThingsPractice from "./connundrumResolved/ThingsPractice";
 //import Contact from "./contactCard/Contact";
 //import Counter2 from "./connundrumResolved/Counter2";
-import Header from "./passing-data-around/Header";
-import Body from "./passing-data-around/Body";
+// import Header from "./passing-data-around/Header";
+// import Body from "./passing-data-around/Body";
+import Box from "./boxes/Box"
+
+
 export default function App(){
-    const[user,setUser] = useState("Joe")
+    // const[user,setUser] = useState("Joe")
     return(
         <div>
             {/* <Header/>
@@ -32,8 +35,9 @@ export default function App(){
             {/* <ThingsPractice/> */}
             {/* <Contact/> */}
             {/* <Counter2/> */}
-            <Header user={user}/>
-            <Body user={user}/>
+            {/* <Header user={user}/>
+            <Body user={user}/> */}
+            <Box/>
         </div>
     )
 }
